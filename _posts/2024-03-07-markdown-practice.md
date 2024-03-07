@@ -1,8 +1,9 @@
 ---
 title: 마크다운 연습
-date: 2024-03-07T00:41:00
+author: 이동혁
+date: 2024-03-07 00:41:00
 tags: [markdown]
-categories: [practice]
+categories: [Practice]
 ---
 ## 마크다운 제목2
 ### 마크다운 제목3
