@@ -1,6 +1,6 @@
 ---
 title: 마크다운 연습
-author: hyuk-dev
+author: hyuk
 date: 2024-03-07 00:41:00
 tags: [markdown]
 categories: [Practice]
