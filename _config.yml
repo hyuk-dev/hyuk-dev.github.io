@@ -111,8 +111,8 @@ comments:
   giscus:
     repo: hyuk-dev/comments # <gh-username>/<repo>
     repo_id: R_kgDOLMJ1_g
-    category: Announcements
-    category_id: DIC_kwDOLMJ1_s4Cdx3e
+    category: General
+    category_id: DIC_kwDOLMJ1_s4Cdx3f
     mapping: # optional, default to 'pathname'
     input_position: top # optional, default to 'bottom'
     lang: ko # optional, default to the value of `site.lang`
