@@ -109,13 +109,13 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: 'hyuk-dev/comments' # <gh-username>/<repo>
-    repo_id: 'R_kgDOLMJ1_g'
-    category: 'Announcements'
-    category_id: 'DIC_kwDOLMJ1_s4Cdx3e'
+    repo: hyuk-dev/comments # <gh-username>/<repo>
+    repo_id: R_kgDOLMJ1_g
+    category: Announcements
+    category_id: DIC_kwDOLMJ1_s4Cdx3e
     mapping: # optional, default to 'pathname'
-    input_position: 'top' # optional, default to 'bottom'
-    lang: 'ko' # optional, default to the value of `site.lang`
+    input_position: top # optional, default to 'bottom'
+    lang: ko # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
