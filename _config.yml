@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: hyuk-dev # the main title
+title: 이동혁 개발노트 # the main title
 
-tagline: 이동혁 기술 블로그 # it will display as the sub-title
+tagline: Back-End # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   백엔드 기술 블로그
