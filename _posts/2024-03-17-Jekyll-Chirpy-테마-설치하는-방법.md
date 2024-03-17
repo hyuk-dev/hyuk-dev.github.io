@@ -21,7 +21,7 @@ Chirpy 테마는 cotes2020 님께서 제작한 Jekyll 기반 테마입니다.
 ### 1. 테마 Fork 진행
 먼저 [Chripy 테마 깃허브 사이트](https://github.com/cotes2020/jekyll-theme-chirpy) 에 접속하셔서 본인의 repo로 Fork 해주시길 바랍니다.
 
-![이미지](./_imgs/Chripy-fork.png)
+![이미지](imgs/Chripy-fork.png)
 
 
 ### 2. 
