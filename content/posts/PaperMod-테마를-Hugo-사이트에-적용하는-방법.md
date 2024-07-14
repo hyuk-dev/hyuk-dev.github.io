@@ -33,12 +33,12 @@ UseHugoToc: false
 Git 설치를 완료하셨다면, `git --version` 명령어를 cmd창에서 입력하여 버전이 제대로 나오는지 확인해주세요. <br/>
 성공적으로 설치가 되었다면 아래와 같이 현재 설치된 git의 버전이 나올 것입니다.
 
-![깃버전 확인 이미지](/content/posts/img/cmd-git-version.png)
+![깃버전 확인 이미지](./img/cmd-git-version.png)
 
 ## Go 설치
 >Hugo가 Go로 만들어진 언어이므로 Go를 먼저 설치해주도록 합시다.
 
-[Go 설치링크](https://go.dev/doc/install)   
+[Go 설치링크](https://go.dev/doc/install) 
 
 Go 설치를 완료하셨다면 마찬가지로 `go version` 을 cmd 창에서 입력해주세요.
 
