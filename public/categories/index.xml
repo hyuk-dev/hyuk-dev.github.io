@@ -14,10 +14,10 @@
     <lastBuildDate>Sat, 13 Jul 2024 20:04:46 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>카테고리</title>
-      <link>http://localhost:1313/categories/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/</link>
+      <title>Hugo</title>
+      <link>http://localhost:1313/categories/hugo/</link>
       <pubDate>Sat, 13 Jul 2024 20:04:46 +0900</pubDate>
-      <guid>http://localhost:1313/categories/%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC/</guid>
+      <guid>http://localhost:1313/categories/hugo/</guid>
       <description></description>
     </item>
   </channel>
