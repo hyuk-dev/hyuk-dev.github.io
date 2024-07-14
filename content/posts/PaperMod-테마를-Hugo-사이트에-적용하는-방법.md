@@ -6,7 +6,7 @@ date: 2024-07-13T20:04:46+09:00
 categories: ["Hugo"]
 author: "Lee"
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: true

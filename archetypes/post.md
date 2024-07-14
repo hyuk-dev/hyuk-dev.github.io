@@ -6,7 +6,7 @@ date: {{ .Date }}
 categories: ["카테고리명"]
 author: "Lee"
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: true
