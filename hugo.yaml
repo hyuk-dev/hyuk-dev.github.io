@@ -40,6 +40,20 @@ params:
   showtoc: false
   tocopen: false
 
+  giscus:
+    repo = "hyuk-dev/hyuk-dev.github.io"
+    repoID = "R_kgDOMV0Tyg"
+    category = "comments"
+    categoryID = "DIC_kwDOMV0Tys4Cgxby"
+    mapping = "og:title"
+    dataStrict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "ko"
+
+
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
