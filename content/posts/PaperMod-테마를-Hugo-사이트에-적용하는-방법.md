@@ -28,31 +28,31 @@ UseHugoToc: false
 ## Git 설치
 >Hugo에 테마를 적용할 때 Git을 사용하기 때문에 설치를 미리 해주셔야합니다. <br/>
 
-[Git 설치링크](https://git-scm.com/downloads) <br/>
+[Git 설치링크](https://git-scm.com/downloads){:target="_blank"} <br/>
 
 Git 설치를 완료하셨다면, `git --version` 명령어를 cmd창에서 입력하여 버전이 제대로 나오는지 확인해주세요. <br/>
 성공적으로 설치가 되었다면 아래와 같이 현재 설치된 git의 버전이 나올 것입니다.
 
-![깃버전 확인 이미지](/img/cmd-git-version.png)
+![깃버전 확인 이미지](/posts/img/cmd-git-version.png){:target="_blank"}
 
 ## Go 설치
 >Hugo가 Go로 만들어진 언어이므로 Go를 먼저 설치해주도록 합시다.
 
-[Go 설치링크](https://go.dev/doc/install) 
+[Go 설치링크](https://go.dev/doc/install){:target="_blank"}
 
 Go 설치를 완료하셨다면 마찬가지로 `go version` 을 cmd 창에서 입력해주세요.
 
-![고 버전 확인 이미지](/content/posts/img/go-version-cmd.png)
+![고 버전 확인 이미지](/posts/img/go-version-cmd.png)
 
 ## Hugo 설치
 >이제 드디어 Hugo를 설치할 차례입니다.
 
-[Hugo 설치링크](https://gohugo.io/installation/)
+[Hugo 설치링크](https://gohugo.io/installation/){:target="_blank"}
 
 아 참고로, Hugo 설치는 명령어를 통해 진행합니다.   
 설치할 때 헷갈리시면 아래 링크에서 방법을 확인해주세요.
 
-[Hugo 설치방법 링크](https://www.devkuma.com/docs/hugo/overview/)
+[Hugo 설치방법 링크](https://www.devkuma.com/docs/hugo/overview/){:target="_blank"}
 
 
 
