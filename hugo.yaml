@@ -1,4 +1,4 @@
-baseURL: "https://hyuk.dev/"
+baseURL: "https://hyuk-dev.github.io/"
 title: 이동혁 기술 블로그
 paginate: 5
 theme: PaperMod
