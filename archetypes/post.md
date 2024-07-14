@@ -3,7 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 # weight: 1
 # aliases: ["/first"]
-tags: ["태그"]
+categories: ["카테고리명"]
 author: "Lee"
 showToc: true
 TocOpen: false
