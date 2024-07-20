@@ -65,7 +65,6 @@ params:
 
   label:
     text: "HYUK.DEV"
-    icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
