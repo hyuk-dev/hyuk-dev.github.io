@@ -17,7 +17,7 @@ params:
   title: 이동혁 기술 블로그
   description: "이동혁 백엔드 개발자의 기술 블로그 입니다."
   keywords: [블로그, 백엔드, 개발자, 기술]
-  author: Lee
+  author: Dong Hyuk Lee
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -64,7 +64,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "HYUK.DEV"
+    text: "이동혁 기술 블로그"
     iconHeight: 35
 
   # profile-mode
