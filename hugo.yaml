@@ -85,7 +85,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "안녕하세요! \U0001F44B"
-    Content:  백엔드 개발자 이동혁의 블로그에 방문해주셔서 감사합니다.
+    Content:  개발자 이동혁의 블로그에 방문해주셔서 감사합니다.
 
   socialIcons:
     #- name: x
