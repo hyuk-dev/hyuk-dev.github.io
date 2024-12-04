@@ -15,8 +15,8 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: 이동혁 기술 블로그
-  description: "이동혁 백엔드 개발자의 기술 블로그 입니다."
-  keywords: [블로그, 백엔드, 개발자, 기술]
+  description: "이동혁 개발자의 기술 블로그 입니다."
+  keywords: [블로그, 개발자, 기술]
   author: Dong Hyuk Lee
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -136,7 +136,7 @@ menu:
       weight: 20
     - identifier: portfolio
       name: 포트폴리오
-      url: https://portfolio.hyuk.dev/
+      url: https://hyuk.dev/
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
