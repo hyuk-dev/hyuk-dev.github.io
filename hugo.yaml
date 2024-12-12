@@ -1,5 +1,5 @@
-baseURL: "https://hyuk.dev/"
-title: 이동혁 기술 블로그
+baseURL: "https://tech.hyuk.dev/"
+title: Lee's Blog
 paginate: 5
 theme: PaperMod
 

@@ -1,5 +1,5 @@
 ---
-title: "CSS"
+title: "PaperMod 테마를 Hugo에 적용하는 법"
 date: 2024-07-13T20:04:46+09:00
 # weight: 1
 # aliases: ["/first"]
