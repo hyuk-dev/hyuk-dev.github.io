@@ -1,1 +1,1 @@
-[링크](hyuk-dev.github.io)
+# 이동혁 기술 블로그
