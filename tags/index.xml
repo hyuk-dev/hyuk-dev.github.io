@@ -11,6 +11,14 @@
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 22 Dec 2024 22:53:39 +0900</lastBuildDate>
     <atom:link href="https://hyuk-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://hyuk-dev.github.io/tags/javascript/</link>
+      <pubDate>Sun, 22 Dec 2024 22:53:39 +0900</pubDate>
+      <guid>https://hyuk-dev.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

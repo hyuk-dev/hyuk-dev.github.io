@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hyuk Tech</title>
-    <link>https://hyuk-dev.github.io/</link>
-    <description>Recent content on Hyuk Tech</description>
+    <title>Posts on Hyuk Tech</title>
+    <link>https://hyuk-dev.github.io/post/</link>
+    <description>Recent content in Posts on Hyuk Tech</description>
     <image>
       <title>Hyuk Tech</title>
       <url>https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Dec 2024 22:53:39 +0900</lastBuildDate>
-    <atom:link href="https://hyuk-dev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hyuk-dev.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>렉시컬 스코프는 무엇인가요?</title>
       <link>https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/</link>

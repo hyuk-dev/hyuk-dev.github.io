@@ -1,0 +1,106 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>렉시컬 스코프는 무엇인가요? | Hyuk Tech</title>
+<meta name=keywords content="javaScript"><meta name=description content="렉시컬 스코프란?
+정적 스코프(Static scope) 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.
+
+예시
+var x = 100;
+
+function one() {
+    var x = 50;
+    two();
+}
+
+function two(){
+    console.log(x);
+}
+
+one(); // 100
+two(); // 100
+보통 one() 에서 50이 출력되고, two() 에서 100이 출력될 거라고 생각하는데
+JavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.
+
+2번째 예시
+var x = 100;
+
+
+function two(){
+    console.log(x);
+}
+
+function one() {
+    x = 50;
+    two();
+}
+
+two(); // 100
+one(); // 50
+하지만 one() 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다."><meta name=author content="Lee"><link rel=canonical href=https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><link rel=icon href=https://hyuk-dev.github.io/img/favicons/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://hyuk-dev.github.io/img/favicons/favicon16x16.png><link rel=icon type=image/png sizes=32x32 href=https://hyuk-dev.github.io/img/favicons/favicon32x32.png><link rel=apple-touch-icon href=https://hyuk-dev.github.io/img/favicons/apple_touch_icon.png><link rel=mask-icon href=https://hyuk-dev.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><meta property="og:url" content="https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/"><meta property="og:site_name" content="Hyuk Tech"><meta property="og:title" content="렉시컬 스코프는 무엇인가요?"><meta property="og:description" content="렉시컬 스코프란? 정적 스코프(Static scope) 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.
+예시 var x = 100; function one() { var x = 50; two(); } function two(){ console.log(x); } one(); // 100 two(); // 100 보통 one() 에서 50이 출력되고, two() 에서 100이 출력될 거라고 생각하는데
+JavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.
+2번째 예시 var x = 100; function two(){ console.log(x); } function one() { x = 50; two(); } two(); // 100 one(); // 50 하지만 one() 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="post"><meta property="article:published_time" content="2024-12-22T22:53:39+09:00"><meta property="article:modified_time" content="2024-12-22T22:53:39+09:00"><meta property="article:tag" content="JavaScript"><meta property="og:image" content="https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta name=twitter:title content="렉시컬 스코프는 무엇인가요?"><meta name=twitter:description content="렉시컬 스코프란?
+정적 스코프(Static scope) 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.
+
+예시
+var x = 100;
+
+function one() {
+    var x = 50;
+    two();
+}
+
+function two(){
+    console.log(x);
+}
+
+one(); // 100
+two(); // 100
+보통 one() 에서 50이 출력되고, two() 에서 100이 출력될 거라고 생각하는데
+JavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.
+
+2번째 예시
+var x = 100;
+
+
+function two(){
+    console.log(x);
+}
+
+function one() {
+    x = 50;
+    two();
+}
+
+two(); // 100
+one(); // 50
+하지만 one() 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://hyuk-dev.github.io/post/"},{"@type":"ListItem","position":2,"name":"렉시컬 스코프는 무엇인가요?","item":"https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"렉시컬 스코프는 무엇인가요?","name":"렉시컬 스코프는 무엇인가요?","description":"렉시컬 스코프란? 정적 스코프(Static scope) 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.\n예시 var x = 100; function one() { var x = 50; two(); } function two(){ console.log(x); } one(); // 100 two(); // 100 보통 one() 에서 50이 출력되고, two() 에서 100이 출력될 거라고 생각하는데\nJavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.\n2번째 예시 var x = 100; function two(){ console.log(x); } function one() { x = 50; two(); } two(); // 100 one(); // 50 하지만 one() 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다.\n","keywords":["javaScript"],"articleBody":"렉시컬 스코프란? 정적 스코프(Static scope) 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.\n예시 var x = 100; function one() { var x = 50; two(); } function two(){ console.log(x); } one(); // 100 two(); // 100 보통 one() 에서 50이 출력되고, two() 에서 100이 출력될 거라고 생각하는데\nJavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.\n2번째 예시 var x = 100; function two(){ console.log(x); } function one() { x = 50; two(); } two(); // 100 one(); // 50 하지만 one() 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다.\n왜 이런 결과가 나오는 걸까? JavaScript는 실행 단계에서 스코프를 결정하는데,\nglobal , one(), two() 에 각각 존재하는 변수 x마다 우선순위가 정해집니다.\n그래서 예시1의 two()가 one() 안에 있다고해도 전역 변수 x의 값을 따르게 되는 것이죠.\n재선언의 경우에는 그렇게되고, 재할당을 하면\n전역 변수의 값이 변경되기 때문에 예시2처럼 변경된 값이 출력되는 것이다.\n렉시컬 스코프의 반대는? 동적 스코프(Dynamic Scope)는 실행단계에서 상위 스코프가 정해지는 것과 달리,\n함수의 호출에 따라 상위 스코프가 정해집니다.\n","wordCount":"169","inLanguage":"en","image":"https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E","datePublished":"2024-12-22T22:53:39+09:00","dateModified":"2024-12-22T22:53:39+09:00","author":{"@type":"Person","name":"Lee"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://hyuk-dev.github.io/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/"},"publisher":{"@type":"Organization","name":"Hyuk Tech","logo":{"@type":"ImageObject","url":"https://hyuk-dev.github.io/img/favicons/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://hyuk-dev.github.io/ accesskey=h title="Hyuk Tech (Alt + H)"><img src=https://hyuk-dev.github.io/img/favicons/apple-touch-icon.png alt aria-label=logo height=35>Hyuk Tech</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://hyuk-dev.github.io/archives/ title=아카이브><span>아카이브</span></a></li><li><a href=https://hyuk-dev.github.io/tags/ title=태그><span>태그</span></a></li><li><a href=https://hyuk.dev title=포트폴리오><span>포트폴리오</span>&nbsp;<svg fill="none" shape-rendering="geometricPrecision" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a></li><li><a href=https://hyuk-dev.github.io/search/ title="검색 (Alt + /)" accesskey=/><span>검색</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://hyuk-dev.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://hyuk-dev.github.io/post/>Posts</a></div><h1 class="post-title entry-hint-parent">렉시컬 스코프는 무엇인가요?</h1><div class=post-meta><span title='2024-12-22 22:53:39 +0900 KST'>December 22, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Lee&nbsp;|&nbsp;<a href=https://github.com/hyuk-dev/blog/tree/main/content/post/%eb%a0%89%ec%8b%9c%ec%bb%ac-%ec%8a%a4%ec%bd%94%ed%94%84.md rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#%eb%a0%89%ec%8b%9c%ec%bb%ac-%ec%8a%a4%ec%bd%94%ed%94%84%eb%9e%80 aria-label="렉시컬 스코프란?">렉시컬 스코프란?</a><ul><li><a href=#%ec%98%88%ec%8b%9c aria-label=예시>예시</a></li><li><a href=#2%eb%b2%88%ec%a7%b8-%ec%98%88%ec%8b%9c aria-label="2번째 예시">2번째 예시</a></li></ul></li><li><a href=#%ec%99%9c-%ec%9d%b4%eb%9f%b0-%ea%b2%b0%ea%b3%bc%ea%b0%80-%eb%82%98%ec%98%a4%eb%8a%94-%ea%b1%b8%ea%b9%8c aria-label="왜 이런 결과가 나오는 걸까?">왜 이런 결과가 나오는 걸까?</a></li><li><a href=#%eb%a0%89%ec%8b%9c%ec%bb%ac-%ec%8a%a4%ec%bd%94%ed%94%84%ec%9d%98-%eb%b0%98%eb%8c%80%eb%8a%94 aria-label="렉시컬 스코프의 반대는?">렉시컬 스코프의 반대는?</a></li></ul></div></details></div><div class=post-content><h1 id=렉시컬-스코프란>렉시컬 스코프란?<a hidden class=anchor aria-hidden=true href=#렉시컬-스코프란>#</a></h1><p><code>정적 스코프(Static scope)</code> 라고도 불리는데 함수 호출이 아닌, 선언의 위치에 따라 결정되는 것을 의미합니다.</p><h2 id=예시>예시<a hidden class=anchor aria-hidden=true href=#예시>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=kd>var</span> <span class=nx>x</span> <span class=o>=</span> <span class=mi>100</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>one</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>x</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nx>two</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>two</span><span class=p>(){</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>x</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>one</span><span class=p>();</span> <span class=c1>// 100
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>two</span><span class=p>();</span> <span class=c1>// 100
+</span></span></span></code></pre></div><p>보통 <code>one()</code> 에서 50이 출력되고, <code>two()</code> 에서 100이 출력될 거라고 생각하는데<br>JavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전역 변수 x의 값을 따른 것이죠.</p><h2 id=2번째-예시>2번째 예시<a hidden class=anchor aria-hidden=true href=#2번째-예시>#</a></h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=kd>var</span> <span class=nx>x</span> <span class=o>=</span> <span class=mi>100</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>two</span><span class=p>(){</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>x</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>one</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>x</span> <span class=o>=</span> <span class=mi>50</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nx>two</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>two</span><span class=p>();</span> <span class=c1>// 100
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>one</span><span class=p>();</span> <span class=c1>// 50
+</span></span></span></code></pre></div><p>하지만 <code>one()</code> 함수 내에서 재선언이 아닌, 값의 재할당을 한다면 50이 출력되는 것을 볼 수 있습니다.</p><h1 id=왜-이런-결과가-나오는-걸까>왜 이런 결과가 나오는 걸까?<a hidden class=anchor aria-hidden=true href=#왜-이런-결과가-나오는-걸까>#</a></h1><p>JavaScript는 실행 단계에서 스코프를 결정하는데,<br><code>global</code> , <code>one()</code>, <code>two()</code> 에 각각 존재하는 변수 x마다 우선순위가 정해집니다.<br>그래서 예시1의 <code>two()</code>가 <code>one()</code> 안에 있다고해도 전역 변수 x의 값을 따르게 되는 것이죠.</p><p>재선언의 경우에는 그렇게되고, 재할당을 하면<br>전역 변수의 값이 변경되기 때문에 예시2처럼 변경된 값이 출력되는 것이다.</p><h1 id=렉시컬-스코프의-반대는>렉시컬 스코프의 반대는?<a hidden class=anchor aria-hidden=true href=#렉시컬-스코프의-반대는>#</a></h1><p>동적 스코프(Dynamic Scope)는 실행단계에서 상위 스코프가 정해지는 것과 달리,<br>함수의 호출에 따라 상위 스코프가 정해집니다.</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://hyuk-dev.github.io/tags/javascript/>JavaScript</a></li></ul><nav class=paginav><a class=next href=https://hyuk-dev.github.io/post/this-%ED%82%A4%EC%9B%8C%EB%93%9C/><span class=title>Next »</span><br><span>this 키워드에 대해 알아봅시다.</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2024 <a href=https://hyuk-dev.github.io/>Hyuk Tech</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="copy";function s(){t.innerHTML="copied!",setTimeout(()=>{t.innerHTML="copy"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>
