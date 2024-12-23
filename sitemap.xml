@@ -2,6 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hyuk-dev.github.io/</loc>
+    <lastmod>2024-12-22T22:53:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hyuk-dev.github.io/tags/javascript/</loc>
+    <lastmod>2024-12-22T22:53:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hyuk-dev.github.io/posts/</loc>
+    <lastmod>2024-12-22T22:53:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hyuk-dev.github.io/tags/</loc>
+    <lastmod>2024-12-22T22:53:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hyuk-dev.github.io/posts/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/</loc>
+    <lastmod>2024-12-22T22:53:39+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://hyuk-dev.github.io/posts/this-%ED%82%A4%EC%9B%8C%EB%93%9C/</loc>
+    <lastmod>2024-12-20T20:04:46+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://hyuk-dev.github.io/archives/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -10,15 +40,7 @@
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://hyuk-dev.github.io/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://hyuk-dev.github.io/search/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://hyuk-dev.github.io/tags/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
