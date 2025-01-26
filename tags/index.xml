@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Hyuk Tech</title>
-    <link>https://hyuk-dev.github.io/tags/</link>
+    <link>https://tech.hyuk.dev/tags/</link>
     <description>Recent content in Tags on Hyuk Tech</description>
     <image>
       <title>Hyuk Tech</title>
-      <url>https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://hyuk-dev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://tech.hyuk.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://tech.hyuk.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Dec 2024 22:53:39 +0900</lastBuildDate>
-    <atom:link href="https://hyuk-dev.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tech.hyuk.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript</title>
-      <link>https://hyuk-dev.github.io/tags/javascript/</link>
+      <link>https://tech.hyuk.dev/tags/javascript/</link>
       <pubDate>Sun, 22 Dec 2024 22:53:39 +0900</pubDate>
-      <guid>https://hyuk-dev.github.io/tags/javascript/</guid>
+      <guid>https://tech.hyuk.dev/tags/javascript/</guid>
       <description></description>
     </item>
   </channel>
