@@ -20,7 +20,9 @@
       <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-virtual-dom/</guid>
       <description>&lt;h1 id=&#34;virtual-dom-이란&#34;&gt;Virtual DOM 이란?&lt;/h1&gt;
 &lt;p&gt;UI의 가상적 표현을 메모리에 저장하고, ReactDOM 같은 라이브러리에 의해 실제 DOM과 동기화하는 프로그래밍 개념으로, 이러한 일련의 과정을 &lt;code&gt;재조정&lt;/code&gt; 이라고 합니다.
-이 접근방식이 React의 선언적 API를 가능하게 합니다. React에게 원하는 UI의 상태를 알려주면 DOM이 그 상태와 일치하게 됩니다.&lt;/p&gt;
+이 접근방식이 React의 선언적 API를 가능하게 합니다. React에게 원하는 UI의 상태를 알려주면 DOM이 그 상태와 일치하게 됩니다.
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h1 id=&#34;react가-virtual-dom-사용하는-법&#34;&gt;React가 Virtual DOM 사용하는 법&lt;/h1&gt;
 &lt;p&gt;기존에 javaScript에서 어떤 식으로 DOM 조작을 했을까요?&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.example&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;backgroundColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
