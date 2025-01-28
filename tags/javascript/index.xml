@@ -6,8 +6,8 @@
     <description>Recent content in JavaScript on Hyuk Tech</description>
     <image>
       <title>Hyuk Tech</title>
-      <url>https://tech.hyuk.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://tech.hyuk.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://tech.hyuk.dev/img/favicons/favicon.ico</url>
+      <link>https://tech.hyuk.dev/img/favicons/favicon.ico</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
@@ -28,6 +28,13 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.example&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;backgroundColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위 코드를 보면 &lt;code&gt;example&lt;/code&gt; 이라는 클래스의 스타일 값만 변경해주는 것 처럼 보이지만,
 실제로 DOM에서는 &lt;code&gt;example&lt;/code&gt; 클래스에 해당하는 엘리먼트와 자식 엘리먼트들을 삭제하고 &lt;code&gt;background-color = &#39;red&#39;&lt;/code&gt; 가 적용 된 새로운 엘리먼트로 대체된 후에 다시 새로 렌더링하여 브라우저에 그려지게 됩니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtual DOM 정리노트</title>
+      <link>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link>
+      <pubDate>Sun, 22 Dec 2024 22:53:39 +0900</pubDate>
+      <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</guid>
+      <description></description>
     </item>
     <item>
       <title>렉시컬 스코프는 무엇인가요?</title>
