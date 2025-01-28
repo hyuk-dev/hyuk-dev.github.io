@@ -11,8 +11,31 @@
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Dec 2024 22:53:39 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2025 16:21:55 +0900</lastBuildDate>
     <atom:link href="https://tech.hyuk.dev/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리액트 컴포넌트</title>
+      <link>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link>
+      <pubDate>Tue, 28 Jan 2025 16:21:55 +0900</pubDate>
+      <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtual DOM 정리노트</title>
+      <link>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-virtual-dom/</link>
+      <pubDate>Fri, 17 Jan 2025 13:45:32 +0900</pubDate>
+      <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-virtual-dom/</guid>
+      <description>&lt;h1 id=&#34;virtual-dom-이란&#34;&gt;Virtual DOM 이란?&lt;/h1&gt;
+&lt;p&gt;UI의 가상적 표현을 메모리에 저장하고, ReactDOM 같은 라이브러리에 의해 실제 DOM과 동기화하는 프로그래밍 개념으로, 이러한 일련의 과정을 &lt;code&gt;재조정&lt;/code&gt; 이라고 합니다.
+이 접근방식이 React의 선언적 API를 가능하게 합니다. React에게 원하는 UI의 상태를 알려주면 DOM이 그 상태와 일치하게 됩니다.
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h1 id=&#34;react가-virtual-dom-사용하는-법&#34;&gt;React가 Virtual DOM 사용하는 법&lt;/h1&gt;
+&lt;p&gt;기존에 javaScript에서 어떤 식으로 DOM 조작을 했을까요?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.example&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;backgroundColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위 코드를 보면 &lt;code&gt;example&lt;/code&gt; 이라는 클래스의 스타일 값만 변경해주는 것 처럼 보이지만,
+실제로 DOM에서는 &lt;code&gt;example&lt;/code&gt; 클래스에 해당하는 엘리먼트와 자식 엘리먼트들을 삭제하고 &lt;code&gt;background-color = &#39;red&#39;&lt;/code&gt; 가 적용 된 새로운 엘리먼트로 대체된 후에 다시 새로 렌더링하여 브라우저에 그려지게 됩니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>렉시컬 스코프는 무엇인가요?</title>
       <link>https://tech.hyuk.dev/post/%EB%A0%89%EC%8B%9C%EC%BB%AC-%EC%8A%A4%EC%BD%94%ED%94%84/</link>
@@ -91,29 +114,6 @@ JavaScript는 렉시컬 스코프(정적 스코프)를 따르기 때문에 전�
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;메소드의 내부함수에서 this를 출력해보면 window가 나옵니다.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>리액트 컴포넌트</title>
-      <link>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</link>
-      <pubDate>Sun, 28 Jan 2024 16:21:55 +0900</pubDate>
-      <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Virtual DOM 정리노트</title>
-      <link>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-virtual-dom/</link>
-      <pubDate>Wed, 17 Jan 2024 13:45:32 +0900</pubDate>
-      <guid>https://tech.hyuk.dev/post/%EB%A6%AC%EC%95%A1%ED%8A%B8-virtual-dom/</guid>
-      <description>&lt;h1 id=&#34;virtual-dom-이란&#34;&gt;Virtual DOM 이란?&lt;/h1&gt;
-&lt;p&gt;UI의 가상적 표현을 메모리에 저장하고, ReactDOM 같은 라이브러리에 의해 실제 DOM과 동기화하는 프로그래밍 개념으로, 이러한 일련의 과정을 &lt;code&gt;재조정&lt;/code&gt; 이라고 합니다.
-이 접근방식이 React의 선언적 API를 가능하게 합니다. React에게 원하는 UI의 상태를 알려주면 DOM이 그 상태와 일치하게 됩니다.
-&lt;!-- raw HTML omitted --&gt;
-&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;h1 id=&#34;react가-virtual-dom-사용하는-법&#34;&gt;React가 Virtual DOM 사용하는 법&lt;/h1&gt;
-&lt;p&gt;기존에 javaScript에서 어떤 식으로 DOM 조작을 했을까요?&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;document&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;querySelector&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;.example&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;).&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;backgroundColor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;red&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;위 코드를 보면 &lt;code&gt;example&lt;/code&gt; 이라는 클래스의 스타일 값만 변경해주는 것 처럼 보이지만,
-실제로 DOM에서는 &lt;code&gt;example&lt;/code&gt; 클래스에 해당하는 엘리먼트와 자식 엘리먼트들을 삭제하고 &lt;code&gt;background-color = &#39;red&#39;&lt;/code&gt; 가 적용 된 새로운 엘리먼트로 대체된 후에 다시 새로 렌더링하여 브라우저에 그려지게 됩니다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
