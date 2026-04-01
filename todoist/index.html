@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 Plan</title>
+    <link rel="stylesheet" type="text/css" href="./App.css" />
+    <link rel="stylesheet" type="text/css" href="./Header.css" />
+    <link rel="stylesheet" type="text/css" href="./Editor.css" />
+    <link rel="stylesheet" type="text/css" href="./List.css" />
+    <link rel="stylesheet" type="text/css" href="./TodoItem.css" />
+  </head>
+  <body>
+    <div class="App">
+      <div class="Header">
+        <h3>오늘의 Plan😊</h3>
+        <h1>2025-03-20</h1>
+      </div>
+
+      <form action="">
+        <div class="Editor">
+          <input type="text" placeholder="할 일을 입력하세요" />
+          <button type="submit">추가</button>
+        </div>
+      </form>
+
+      <div class="List">
+        <h4>Todo List🌹</h4>
+        <input type="text" id="keyword" placeholder="검색..." />
+        <div class="todos_wrapper">
+          <div class="TodoItem">
+            <input type="checkbox" />
+            <div class="content">친구랑 점심먹기</div>
+            <div class="date">2025-03-20</div>
+            <button onclick="" class="button">삭제</button>
+          </div>
+
+          <div class="TodoItem">
+            <input type="checkbox" />
+            <div class="content">가게에서 장보기</div>
+            <div class="date">2025-03-20</div>
+            <button onclick="" class="button">삭제</button>
+          </div>
+
+          <div class="TodoItem">
+            <input type="checkbox" />
+            <div class="content">집에서 쉬기</div>
+            <div class="date">2025-03-20</div>
+            <button onclick="" class="button">삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let mockData = [
+        {
+          id: 0,
+          isDone: false,
+          content: 'React study',
+          date: new Date().getTime(),
+        },
+        {
+          id: 1,
+          isDone: true,
+          content: '친구 만나기',
+          date: new Date().getTime(),
+        },
+        {
+          id: 2,
+          isDone: false,
+          content: '낮잠 자기',
+          date: new Date().getTime(),
+        },
+      ];
+
+      // 요일 출력을 위한 배열
+      let day = ['일', '월', '화', '수', '목', '금', '토'];
+
+      onload = () => {
+        // initData(mockData) 함수 호출
+        initData(mockData);
+        // 현재 날짜를 년 월 일 요일로 출력한다.
+        let today = new Date();
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let date = today.getDate();
+        let dayOfWeek = day[today.getDay()];
+        document.querySelector('.Header > h1').innerHTML =
+          `${year}년 ${month}월 ${date}일 ${dayOfWeek}요일`;
+
+        onUpdate(2);
+
+        document.querySelector("#keyword").onkeyup = () => {
+          let searchedTodos = getFilterData(event.target.value);
+          initData(searchedTodos);
+        }
+      };
+
+      const initData = (printData) => {
+        let todoWrapperEle = document.querySelector('.todos_wrapper');
+        // 기존 innerHTML을 지운다
+        todoWrapperEle.innerHTML = '';
+
+        // mockData 배열을 forEach를 이용해서 화면에 출력한다.
+        printData.forEach((item, index) => {
+          let currentElement = document.createElement('div');
+          currentElement.className = 'TodoItem';
+          currentElement.innerHTML = `
+              <input type="checkbox" />
+              <div class="content"></div>
+              <div class="date"></div>
+              <button onclick="" class="button"></button>
+          `;
+          currentElement.querySelector('.content').innerHTML = item.content;
+          currentElement.querySelector('.date').innerHTML = new Date(
+            item.date
+          ).toLocaleString('ko-KR');
+          currentElement.querySelector('input').checked = item.isDone;
+          let deleteBtn = currentElement.querySelector('button');
+          deleteBtn.innerHTML = '삭제';
+          deleteBtn.setAttribute('name', `${item.id}`);
+          deleteBtn.setAttribute('value','delete');
+          deleteBtn.addEventListener('click', todoDel, false);
+
+          todoWrapperEle.append(currentElement);
+        });
+      };
+
+      let idIndex = 3;
+
+      document.querySelector('.Editor > button').onclick = () => {
+        event.preventDefault();
+
+        let content = event.target.previousElementSibling.value;
+
+        event.target.previousElementSibling.value = '';
+
+        mockData.push({
+          id: idIndex++,
+          isDone: false,
+          content,
+          date: new Date().getTime(),
+        });
+
+        initData(mockData);
+      };
+
+      const onUpdate = (targetId) => {
+        // TodoItem에서 호출할 때 전달한 id
+        mockData.map((data) => {
+          if (data.id === targetId) {
+            data.isDone = !data.isDone;
+          }
+        });
+
+        initData(mockData);
+      };
+
+      const todoDel = () => {
+        let targetId = parseInt(event.target.getAttribute('name'));
+        mockData = mockData.filter((data) => data.id !== targetId);
+        document.querySelector("#keyword").value = "";
+        initData(mockData);
+      };
+
+      // function todoDel(th) {
+      //   let targetId = parseInt(th.getAttribute('name'));
+      //   mockData = mockData.filter((data) => data.id !== targetId);
+      //   initData(mockData);
+      // }
+
+      const getFilterData = (search) => {
+        // 검색어가 없으면 mockData를 리턴
+        if(!search) return mockData;
+
+        //filter 함수를 이용해서 search(검색어)를 포함하고 있는 todo를 받는다.
+        let filteredData = mockData.filter((data) => data.content.includes(search));
+        //filter의 결과를 리턴한다.
+        return filteredData;
+      }
+
+    </script>
+  </body>
+</html>
