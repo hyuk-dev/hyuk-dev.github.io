@@ -44,7 +44,7 @@ function filterAndSortFruits() {
       break;
     default: // 이름순
       fruitProducts.sort((fruit1, fruit2) =>
-        fruit1.name < fruit2.name ? -1 : fruit1.name > fruit2.name ? 1 : 0
+        fruit1.name.localeCompare(fruit2.name)
       );
       break;
   }
